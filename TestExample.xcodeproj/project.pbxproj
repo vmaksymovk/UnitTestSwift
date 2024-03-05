@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5608C7C2B974CAE00B97A26 /* SilniaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5608C7B2B974CAE00B97A26 /* SilniaTest.swift */; };
 		F56846D12B973E6400C1B333 /* TestExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56846D02B973E6400C1B333 /* TestExampleApp.swift */; };
 		F56846D32B973E6400C1B333 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56846D22B973E6400C1B333 /* ContentView.swift */; };
 		F56846D52B973E6700C1B333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56846D42B973E6700C1B333 /* Assets.xcassets */; };
@@ -15,6 +16,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F5608C7D2B974CAE00B97A26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56846C52B973E6400C1B333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56846CC2B973E6400C1B333;
+			remoteInfo = TestExample;
+		};
 		F568471E2B97407100C1B333 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F56846C52B973E6400C1B333 /* Project object */;
@@ -25,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5608C792B974CAE00B97A26 /* SilniaTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilniaTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5608C7B2B974CAE00B97A26 /* SilniaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilniaTest.swift; sourceTree = "<group>"; };
 		F56846CD2B973E6400C1B333 /* TestExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56846D02B973E6400C1B333 /* TestExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExampleApp.swift; sourceTree = "<group>"; };
 		F56846D22B973E6400C1B333 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F5608C762B974CAE00B97A26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F56846CA2B973E6400C1B333 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,11 +69,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5608C7A2B974CAE00B97A26 /* SilniaTest */ = {
+			isa = PBXGroup;
+			children = (
+				F5608C7B2B974CAE00B97A26 /* SilniaTest.swift */,
+			);
+			path = SilniaTest;
+			sourceTree = "<group>";
+		};
 		F56846C42B973E6400C1B333 = {
 			isa = PBXGroup;
 			children = (
 				F56846CF2B973E6400C1B333 /* TestExample */,
 				F568471B2B97407100C1B333 /* UnitTestExample */,
+				F5608C7A2B974CAE00B97A26 /* SilniaTest */,
 				F56846CE2B973E6400C1B333 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +92,7 @@
 			children = (
 				F56846CD2B973E6400C1B333 /* TestExample.app */,
 				F568471A2B97407100C1B333 /* UnitTestExample.xctest */,
+				F5608C792B974CAE00B97A26 /* SilniaTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +127,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F5608C782B974CAE00B97A26 /* SilniaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5608C7F2B974CAE00B97A26 /* Build configuration list for PBXNativeTarget "SilniaTest" */;
+			buildPhases = (
+				F5608C752B974CAE00B97A26 /* Sources */,
+				F5608C762B974CAE00B97A26 /* Frameworks */,
+				F5608C772B974CAE00B97A26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5608C7E2B974CAE00B97A26 /* PBXTargetDependency */,
+			);
+			name = SilniaTest;
+			productName = SilniaTest;
+			productReference = F5608C792B974CAE00B97A26 /* SilniaTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F56846CC2B973E6400C1B333 /* TestExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F56846F12B973E6800C1B333 /* Build configuration list for PBXNativeTarget "TestExample" */;
@@ -145,6 +190,10 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					F5608C782B974CAE00B97A26 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F56846CC2B973E6400C1B333;
+					};
 					F56846CC2B973E6400C1B333 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -169,11 +218,19 @@
 			targets = (
 				F56846CC2B973E6400C1B333 /* TestExample */,
 				F56847192B97407100C1B333 /* UnitTestExample */,
+				F5608C782B974CAE00B97A26 /* SilniaTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F5608C772B974CAE00B97A26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F56846CB2B973E6400C1B333 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +250,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F5608C752B974CAE00B97A26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5608C7C2B974CAE00B97A26 /* SilniaTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F56846C92B973E6400C1B333 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +278,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F5608C7E2B974CAE00B97A26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56846CC2B973E6400C1B333 /* TestExample */;
+			targetProxy = F5608C7D2B974CAE00B97A26 /* PBXContainerItemProxy */;
+		};
 		F568471F2B97407100C1B333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F56846CC2B973E6400C1B333 /* TestExample */;
@@ -221,6 +291,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F5608C802B974CAE00B97A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YDM4QC6KDH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maksymov.SilniaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestExample";
+			};
+			name = Debug;
+		};
+		F5608C812B974CAE00B97A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YDM4QC6KDH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maksymov.SilniaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestExample";
+			};
+			name = Release;
+		};
 		F56846EF2B973E6800C1B333 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -437,6 +543,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F5608C7F2B974CAE00B97A26 /* Build configuration list for PBXNativeTarget "SilniaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5608C802B974CAE00B97A26 /* Debug */,
+				F5608C812B974CAE00B97A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F56846C82B973E6400C1B333 /* Build configuration list for PBXProject "TestExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
