@@ -1,10 +1,3 @@
-//
-//  SilniaTest.swift
-//  SilniaTest
-//
-//  Created by Влад on 3/5/24.
-//
-
 import XCTest
 
 final class SilniaTest: XCTestCase {
@@ -21,22 +14,6 @@ final class SilniaTest: XCTestCase {
             return n * factorial(n - 1)
         }
     }
-
-
-
-
-    override func setUpWithError() throws {
-        
-    }
-
-    override func tearDownWithError() throws {
-        
-    }
-
-    func testExample() throws {
-        
-    }
-
     
     func testFactorial() throws {
         
@@ -50,14 +27,8 @@ final class SilniaTest: XCTestCase {
         
         
         XCTAssertEqual( factorial(10), 3628800, "Silnia z 10 powinna wynosić 3628800")
-        
-        
-        
-        
-        
+ 
         
     }
-
-
 
 }
