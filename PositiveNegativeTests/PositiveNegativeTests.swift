@@ -1,35 +1,61 @@
-//
-//  PositiveNegativeTests.swift
-//  PositiveNegativeTests
-//
-//  Created by Влад on 3/12/24.
-//
-
+import Foundation
 import XCTest
 
-final class PositiveNegativeTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+func calculateDecreasingInstallments(amount: Double, interestRate: Double, periods: Int) -> [Double]? {
+    
+    guard amount > 0, interestRate >= 0, periods > 0 else {
+        
+        return nil
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    
+    let principalPart = amount / Double(periods)
+    var installments: [Double] = []
+    
+    
+    for period in 1...periods {
+        
+        let remainingAmount = amount - Double(period - 1) * principalPart
+        
+        let interest = (remainingAmount * interestRate / 100) / 12
+        
+        let installment = principalPart + interest
+        installments.append(round(installment * 100) / 100)
     }
+    
+    return installments
+}
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+class DecreasingInstallmentsTests: XCTestCase {
+    
+    
+    func testPositiveExample() {
+        let amount = 1200.0
+        let interestRate = 12.0
+        let periods = 12
+        let expected: [Double] = [112.0, 111.0, 110.0, 109.0, 108.0, 107.0, 106.0, 105.0, 104.0, 103.0, 102.0, 101.0]
+        
+        
+        if let result = calculateDecreasingInstallments(amount: amount, interestRate: interestRate, periods: periods) {
+            
+            XCTAssertEqual(result, expected)
+        } else {
+            
+            XCTFail("Invalid input parameters")
         }
     }
-
+    
+    
+    func testNegativeExample() {
+        let amount = -1200.0
+        let interestRate = 12.0
+        let periods = 12
+        
+        
+        let result = calculateDecreasingInstallments(amount: amount, interestRate: interestRate, periods: periods)
+        
+        
+        XCTAssertNil(result)
+    }
 }

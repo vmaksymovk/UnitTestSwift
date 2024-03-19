@@ -52,8 +52,7 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "YES"
-            parallelizable = "YES">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F56846FD2B973F8B00C1B333"
@@ -92,6 +91,61 @@
                BlueprintIdentifier = "F5608C782B974CAE00B97A26"
                BuildableName = "SilniaTest.xctest"
                BlueprintName = "SilniaTest"
+               ReferencedContainer = "container:TestExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F547F2932BA0748700503D45"
+               BuildableName = "UnitCreditTest.xctest"
+               BlueprintName = "UnitCreditTest"
+               ReferencedContainer = "container:TestExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F547F2A02BA07EE100503D45"
+               BuildableName = "CreditTestCount.xctest"
+               BlueprintName = "CreditTestCount"
+               ReferencedContainer = "container:TestExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F547F2AD2BA0899B00503D45"
+               BuildableName = "UIAutomationTest.xctest"
+               BlueprintName = "UIAutomationTest"
+               ReferencedContainer = "container:TestExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F547F2BC2BA091E900503D45"
+               BuildableName = "PositiveNegativeTests.xctest"
+               BlueprintName = "PositiveNegativeTests"
+               ReferencedContainer = "container:TestExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F5A97D742BA9AC5200DB49CF"
+               BuildableName = "BruttoVatTest.xctest"
+               BlueprintName = "BruttoVatTest"
                ReferencedContainer = "container:TestExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
